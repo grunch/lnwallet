@@ -1,0 +1,275 @@
+<resources>
+    <string name="lang">esp</string>
+    <string name="emerge_report">Mostrar informe de error</string>
+    <string name="emerge_mode">Modo de emergencia</string>
+
+    <!-- app wide -->
+    <string name="step_fees"><![CDATA[<font color=#999999>Paso final: comisión de minado</font><br><br>%1$s]]></string>
+    <string name="greetings">Billetera Bitcoin Lightning\nPor favor lea este corto pero importante\n<a href='http://lightning-wallet.com'>manual</a> antes de continuar</string>
+    <string name="sets_rescan_ok">Al aplicación se cerrará ahora y se escaneará nuevamente la blockchain la próxima vez que la inicie</string>
+    <string name="fee_risky"><![CDATA[<small>%1$s %2$s<br><small><font color=#999999>La confirmación puede tardar horas</font></small></small>]]></string>
+    <string name="fee_live"><![CDATA[<small>%1$s %2$s<br><small><font color=#999999>Más rápida la confirmación</font></small></small>]]></string>
+    <string name="wallet_state"><small>Balance total\n<font color='#999999'>Onchain and LN</font></small></string>
+    <string name="exchange_rate"><small>Tasa de cambio\n<font color='#999999'>Por 1 bitcoin</font></small></string>
+    <string name="copied_to_clipboard">Copiado «%1$s»</string>
+    <string name="wallet_restore">Restaurar Billetera</string>
+    <string name="wallet_create">Nueva Billetera</string>
+
+    <array name="denoms">
+        <item><![CDATA[Satoshi <font color=#999999><small>= 0.00000001 btc</small></font>]]></item>
+        <item><![CDATA[Finney <font color=#999999><small>= 0.0001 btc</small></font>]]></item>
+        <item><![CDATA[Bitcoin <font color=#999999><small>= 1 btc</small></font>]]></item>
+    </array>
+
+    <array name="restore_options">
+        <item>Introduzca frase mnemotécnica</item>
+        <item>Usar archivo de migración</item>
+    </array>
+
+    <string name="restore_when">Cuándo fue creada la billetera?\nDeje la fecha como está si no está seguro</string>
+    <string name="create_wallet_creating">Generando su billetera\nPuede demorar unos minutos</string>
+    <string name="restore_wallet_restoring">Restaurando su billetera\nPuede tomar un tiempo</string>
+    <string name="restore_mnemonic_wrong">La frase debe ser de 12 palabras</string>
+    <string name="restore_hint">Su frase mnemotécnica BIP32</string>
+
+    <!-- headers with links -->
+    <string name="mnemonic_info"><font color="#E31300">La frase mnemotécnica es importante</font>\n<a href="http://lightning-wallet.com/installing-lightning-wallet#mnemonic-code">Lea más</a> y guárdela ahora</string>
+    <string name="olympus_what"><a href='http://lightning-wallet.com/what-does-olympus-server-do#what-does-olympus-server-do'>Qué hace el servidor Olympus</a>\n<small>No cambie esta configuración a menos que realmente sepa lo que está haciendo</small></string>
+    <string name="boost_details"><![CDATA[Le gustaría incrementar la comisión para esta transacción y así obtener una más rápida confirmación?<br><br>suma actual %1$s<br>después del incremento %2$s<br>]]></string>
+    <string name="read_settings"><![CDATA[<small>Billetera Bitcoin Lightning<br><a href=http://lightning-wallet.com>Leer manual de bolsillo</a><br>v0.1&#8211;61</small>]]></string>
+
+    <string name="channel_recovery_info">
+        La herramienta de recuperación obtiene las copias de seguridad de los canales disponibles y las utiliza para reembolsar los fondos bloqueados en su billetera onchain.\n\nUsted
+        debería esperar una transacción de Bitcoin de reembolso poco después de iniciarla si ha perdido canales con fondos bloqueados,
+        de lo contrario, no ocurrirá nada.\n\nEl uso de esta herramienta no afecta los canales abiertos actualmente presentes en este dispositivo.
+    </string>
+
+    <string name="tokens_warn"><![CDATA[
+        Tenga en cuenta que esta billetera usa <a href=http://lightning-wallet.com/storage-tokens#storage-tokens>tokens de almacenamiento</a> pagos
+        para asegurar el respaldo de canales encriptados.<br><br>Un pago automático lightning de <i>%1$s</i> adquirirá 50 tokens de almacenamiento
+        una vez abierto su primer canal.<br><br>Estos tokens lo protegerán contra la pérdida accidental de dinero en los próximos 50 canales de pago.
+    ]]></string>
+
+    <!-- Olympus server -->
+    <string name="olympus_actions">Agregar, eliminar o solicitar nuevamente</string>
+    <string name="olympus_backup">Usar como servidor de respaldo</string>
+    <string name="olympus_edit">Editar servidor Olympus</string>
+    <string name="olympus_add">Agregar servidor Olympus</string>
+    <string name="olympus_hint">Servidor host:puerto</string>
+
+    <array name="olympus_tokens_left">
+        <item><![CDATA[<small><i>no quedan tokens</i></small>]]></item>
+        <item><![CDATA[<small><i>queda %1$d token</i></small>]]></item>
+        <item><![CDATA[<small><i>quedan %1$d tokens</i></small>]]></item>
+        <item><![CDATA[<small><i>respaldo desactivado</i></small>]]></item>
+    </array>
+
+    <!-- menu and fab -->
+    <string name="sets_manage_olympus">Administrar servidores Olympus</string>
+    <string name="sets_chan_recover">Usar herramienta de recuperación de canal</string>
+    <string name="sets_zygote">Usar herramienta de migración de billetera</string>
+    <string name="sets_mnemonic">Ver frase mnemotécnica</string>
+    <string name="sets_rescan">Reescanear blockchain</string>
+
+    <string name="action_coins_send">Enviar fondos</string>
+    <string name="action_coins_receive">Recibir fondos</string>
+    <string name="action_ln_details">Ver detalles del canal</string>
+    <string name="action_ln_open">Abrir nuevo canal</string>
+
+    <!-- dialogs -->
+    <string name="amount_hint_sat"><![CDATA[Monto en Satoshi%1$s]]></string>
+    <string name="amount_hint_btc"><![CDATA[Monto en Bitcoin%1$s]]></string>
+    <string name="amount_hint_fin"><![CDATA[Monto en Finney%1$s]]></string>
+
+    <string name="dialog_pr_making">Hacer solicitud de pago&#8230;</string>
+    <string name="dialog_pr_expired">Ha expirado la solicitud de pago</string>
+    <string name="dialog_recovering">Recuperando fondos&#8230;</string>
+    <string name="dialog_sum_empty">Por favor indique un monto</string>
+    <string name="dialog_sum_small">El monto es muy bajo</string>
+    <string name="dialog_sum_big">El monto es muy alto</string>
+    <string name="dialog_pay_onchain">Pagar onchain</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_retry">Reintentar</string>
+    <string name="dialog_boost">CPFP</string>
+    <string name="dialog_next">Siguiente</string>
+    <string name="dialog_pay">Pagar</string>
+    <string name="dialog_max">Max</string>
+    <string name="dialog_ok">Aceptar</string>
+
+    <!-- notifications -->
+    <string name="btc_empty">Sin fondos</string>
+    <string name="ln_empty">No hay canales abiertos</string>
+    <string name="btc_status_operational">Billetera operativa</string>
+    <string name="btc_status_connecting"><![CDATA[<font color=#FF9900>Conectando a los pares&#8230;</font>]]></string>
+    <string name="amount_hint_newchan"><![CDATA[<br><small>capacidad mínima %1$s<br>capacidad máxima %2$s<br>balance %3$s</small>]]></string>
+    <string name="amount_hint_can_receive"><![CDATA[<br><small>puede recibir %1$s</small>]]></string>
+    <string name="amount_hint_can_send"><![CDATA[<br><small>puede enviar %1$s</small>]]></string>
+
+    <array name="info_progress">
+        <item>Sync is complete</item>
+        <item><![CDATA[<font color=#FF9900>Sincronización: %1$d día faltante</font>]]></item>
+        <item><![CDATA[<font color=#FF9900>Sincronización: %1$d días faltantes</font>]]></item>
+    </array>
+
+    <string name="ln_incoming_title"><![CDATA[<font color=#0099FE><strong>Pago con Lightning</strong></font><br>%1$s<br><br>recibido %2$s<br><small>%3$s a tasas actuales</small>]]></string>
+    <string name="ln_outgoing_title_no_fee"><![CDATA[<font color=#0099FE><strong>Pago con Lightning</strong></font><br>%1$s<br><br>enviado %2$s<br><small>%3$s a tasas actuales</small>]]></string>
+    <string name="ln_outgoing_title"><![CDATA[<font color=#0099FE><strong>Pago con Lightning</strong></font><br>%1$s<br><br>enviado %2$s<br><small>%3$s a tasas actuales</small><br>comisión %4$s = %5$.2f%%]]></string>
+
+    <string name="btc_incoming_title"><![CDATA[<font color=#FF9900><strong>Transacción Bitcoin</strong></font><br>%1$s<br><br>recibido %2$s<br><small>%3$s a tasas actuales</small>]]></string>
+    <string name="btc_outgoing_title"><![CDATA[<font color=#FF9900><strong>Transacción Bitcoin</strong></font><br>%1$s<br><br>sent %2$s<br><small>%3$s a tasas actuales</small><br>fee %4$s = %5$.2f%%]]></string>
+    <string name="btc_outgoing_title_no_fee"><![CDATA[<font color=#FF9900><strong>Transacción Bitcoin</strong></font><br>%1$s<br><br>sent %2$s<br><small>%3$s a tasas actuales</small>]]></string>
+    <string name="btc_pending_title"><![CDATA[<font color=#FF9900><strong>Transacción Bitcoin</strong></font><br><small>retraso en el reintegro en el canal</small><br>%1$s<br><br>pendiente %2$s<br><small>%3$s a tasas actuales</small><br>fee %4$s = %5$.2f%%]]></string>
+    <string name="btc_refunding">Transacción de reintegro</string>
+
+    <string name="txs_sum_chan"><![CDATA[<font color=#0099FE><tt>+</tt>%1$s</font>]]></string>
+    <string name="txs_sum_out"><![CDATA[<font color=#E31300><tt>-</tt>%1$s</font>]]></string>
+    <string name="txs_sum_in"><![CDATA[<font color=#6AAB38><tt>+</tt>%1$s</font>]]></string>
+    <string name="txs_view_outside">Ver en el sitio de SmartBit</string>
+    <string name="txs_share_body">Compartir transacción sin procesar</string>
+    <string name="txs_p2wsh">Fondear canal</string>
+
+    <array name="txs_confs">
+        <item><![CDATA[<strong>esperando&#160;confirmación</strong>]]></item>
+        <item><![CDATA[<strong>%1$s&#160;confirmación</strong>]]></item>
+        <item><![CDATA[<strong>%1$s&#160;confirmaciones</strong>]]></item>
+    </array>
+
+    <string name="send_scan_qr">Escanear un código QR</string>
+    <string name="send_paste_payment_request"><![CDATA[Pegar una dirección Bitcoin<br><font color=#999999><small>o una solicitud de pago Lightning</small></font>]]></string>
+    <string name="ln_send_title"><![CDATA[<font color=#0099FE><strong>Enviar pago Lightning</strong></font><small><br><br>%1$s</small>]]></string>
+    <string name="btc_send_title"><![CDATA[<font color=#FF9900><strong>Enviar transacción Bitcoin</strong></string></font>]]></string>
+
+    <string name="ln_receive_title"><![CDATA[<font color=#0099FE><strong>Recibir pago Lightning</strong></font>]]></string>
+    <string name="ln_receive_option"><![CDATA[<font color=#0099FE>Pago Lightning</font><small><br><br>%1$s</small>]]></string>
+    <string name="btc_receive_option"><![CDATA[<font color=#FF9900>Transacción Bitcoin</font><small><br><br>Generar un código QR con la dirección onchain, puede ser utilizada para recibir transacciones comunes de Bitcoin</small>]]></string>
+    <string name="ln_receive_6conf"><![CDATA[&#9888; No puedes solicitar pagos Lightning porque tu par no está listo aún. Típicamente los pares están listos una vez una transacción Bitcoin para fondear un canal obtiene 6 confirmaciones]]></string>
+    <string name="ln_receive_reserve"><![CDATA[&#9888; No puedes solicitar pagos Lightning porque primero necesita gastar al menos %1$s para hacer espacio para recibir]]></string>
+    <string name="ln_receive_ok">Generar un código QR con una solicitud de pago Lightning, puede ser utilizada para recibir pagos rápidos offchain</string>
+    <string name="ln_receive_nochan">No se encontraron canales de pago</string>
+
+    <string name="err_ln_peer_offline">No se pudo conectar con un par remoto en %1$s</string>
+    <string name="err_ln_no_data_loss_protect">Este par no provee 'Data loss protection'</string>
+    <string name="err_ln_remote_amount_high">Falló porque el monto de pago es demasiado alto para que lo puedas aceptar</string>
+    <string name="err_ln_remote_amount_low">Falló porque el monto de pago es demasiado bajo para que lo puedas aceptar</string>
+    <string name="err_ln_amount_overflow">Falló porque el monto de pago excede un máximo permitido</string>
+    <string name="err_ln_fulfilled">Falló porque este pago ya ha sido realizado</string>
+    <string name="err_ln_too_many">Falló porque ya hay demasiados pagos en camino</string>
+    <string name="err_ln_frozen">No se puede volver a realizar este pago porque se encuentra congelado</string>
+
+    <string name="err_ln_no_chan">Falló porque no hay ningún canal en línea, por favor revise la conectividad de su teléfono e intente de nuevo en unos segundos</string>
+    <string name="err_ln_still_opening">Falló porque aún no hay canales de pago abiertos\n\nTransacciones de fondeo necesitan obtener suficientes confirmaciones antes de que un canal pueda ser utilizado</string>
+    <string name="err_ln_second_reserve"><![CDATA[Failed because a channel balance is too low when soft reserve is taken into account<br><br>%1$s<br><br>reserva dura %2$s<br>reserva suave %3$s<br><br>capacidad %4$s<br>puede enviar %5$s<br>enviando %6$s]]></string>
+    <string name="err_not_enough_funds"><![CDATA[<strong>No hay fondos suficientes</strong><br><br>puede enviar %1$s<br>enviar %2$s<br>falta %3$s<br>pendiente %4$s<br><br>Tenga en cuenta que las transacciones pendientes de Bitcoin deben obtener al menos una confirmación para poder gastarlas]]></string>
+    <string name="err_ln_expired"><![CDATA[El pago ha expirado<br><br>Puede forzar el cierre de un canal relacionado, pero un mejor enfoque sería ponerse en contacto con un par defectuoso y dejarque lo resuelvan<br><br><strong>Hash de pago expirado</strong><br>%1$s]]></string>
+    <string name="err_tx_too_large">Falló porque la transacción es muy grande para ser procesada por la red Bitcoin. Intente dividirla en transacciones más pequeñas.</string>
+    <string name="err_empty_shrunk">Falló porque una salida no puede reducirse por comisiones. Por favor ingrese fondos e intente nuevamente</string>
+    <string name="err_self_payment">Falló porque no están permitidos pagos a si mismo</string>
+    <string name="err_general">Falló porque un error ha ocurrido</string>
+    <string name="err_no_data">No se ha encontrado data útil</string>
+
+    <string name="err_fund_verify_error">No se puede proceder con el fondeo externo porque ha fallado la verificación remota</string>
+    <string name="err_fund_not_verified_yet">No se puede proceder con el fondeo externo porque la verificación aún no ha finalizado</string>
+    <string name="err_fund_reserve_failed">No se puede proceder con el fondeo externo porque un monto solicitado no puede ser reservado</string>
+    <string name="err_fund_reserve_expired">No se puede proceder con el fondeo externo porque su monto reservado ya ha expirado</string>
+    <string name="err_fund_funding_pending">No se puede proceder con el fondeo externo porque su monto reservado todavía está siendo asignado</string>
+    <string name="err_fund_funding_exists">No se puede proceder con el fondeo externo porque ya existe otro monto reservado suyo</string>
+    <string name="err_publish_error">No se puede proceder con el fondeo externo porque hubo una falla en la transmisión de una transacción de fondeo</string>
+    <string name="err_fund_internal_error">No se puede proceder con el fondeo externo porque ocurrió un error interno remoto</string>
+    <string name="err_fund_disconnect">Desconectado de fondeador externo</string>
+
+    <string name="ex_fund_connecting"><![CDATA[<small>conectando a <i>%1$s</i></small><br>expira en <strong>%2$s</strong><br>monto de fondeo %3$s<br>comisión de fondeo %4$s]]></string>
+    <string name="ex_fund_connected"><![CDATA[<small>conectado a <i>%1$s</i></small><br>expira en <strong>%2$s</strong><br>monto de fondeo %3$s<br>comisión de fondeo %4$s]]></string>
+    <string name="ex_fund_accept"><![CDATA[<small><i>%1$s</i></small><br>capacidad %2$s<br>comisión de fondeo %3$s]]></string>
+
+    <string name="ln_open_batch_inform"><![CDATA[Una sencilla transacción Bitcoin será usada para completar una solicitud de pago y abrir su primer canal]]></string>
+    <string name="ln_open_batch_confirm"><![CDATA[¿Desea completar una solicitud de pago y usar el cambio restante para abrir un canal de pago?<br><br><small>%1$s</small><br><br>solicitud %2$s<br>canal %3$s<br>comisión %4$s]]></string>
+
+    <!-- SPECIFIC TO LIGHTNING NETWORK -->
+
+    <string name="ln_status_peer">Seleccionar par</string>
+    <string name="ln_share_debug">Compartir información de depuración</string>
+    <string name="ln_share_hash">Compartir hash de pago</string>
+    <string name="ln_share_proof">Compartir Prueba de Pago</string>
+    <string name="ln_description_hint">Agregar alguna descripción</string>
+    <string name="ln_no_description">No se ha indicado descripción</string>
+    <string name="ln_proof">Solocitud de pago firmada: %1$s\n\nPreimagen de pago: %2$s</string>
+    <string name="ln_qr_disposable"><![CDATA[La solicitud es válida por 2 días<br>No reutilice este código QR]]></string>
+    <string name="notice_sync_body">Por favor abra la Billetera Bitcoin Lightning</string>
+    <string name="notice_sync_title">Se requiere sincronización</string>
+
+    <!-- see PaymentInfo.scala -->
+    <array name="ln_payment_states">
+        <item>esperando beneficiario</item>
+        <item>todavía en progreso</item>
+        <item>pago exitoso</item>
+        <item>fallado y devuelto</item>
+        <item>fallado y congelado</item>
+    </array>
+
+    <string name="ln_info_sent">valor enviado</string>
+    <string name="ln_info_received">valor recibido</string>
+    <string name="ln_info_in_flight">valor en camino</string>
+    <string name="ln_info_can_receive">puede recibir</string>
+    <string name="ln_info_refundable">reintegrable</string>
+    <string name="ln_info_depth">profundidad de fondeo</string>
+    <string name="ln_info_fee">comisión en cierre-forzado</string>
+    <string name="ln_info_capacity">capacidad</string>
+    <string name="ln_info_can_send">puede enviar</string>
+    <string name="ln_info_started">iniciado</string>
+    <string name="ln_info_closed">cerrado</string>
+
+    <string name="ln_info_funding">%1$s de %2$s</string>
+    <string name="ln_info_close_coop">Cerrado cooperativamente</string>
+    <string name="ln_info_close_local">Cerrado-forzado por su billetera</string>
+    <string name="ln_info_close_remote">Cerrado-forzado por par remoto</string>
+    <string name="ln_info_no_receive">La recepción aún ha sido activada por el par</string>
+    <string name="ln_info_coop_attempt">Intentando cierre cooperativo&#8230;</string>
+    <string name="ln_info_state_offline"><![CDATA[<font color=#777777><small>desconectado</small></font>]]></string>
+    <string name="ln_info_state_online"><![CDATA[<font color=#6AAB38><small>en-línea</small></font>]]></string>
+    <string name="ln_info_nothing"><![CDATA[<i>nada</i>]]></string>
+
+    <string name="ln_info_status_open"><![CDATA[<font color=#6AAB38>ABIERTO</font>]]></string>
+    <string name="ln_info_status_opening"><![CDATA[<font color=#FF9900>ABRIENDO</font>]]></string>
+    <string name="ln_info_status_shutdown"><![CDATA[<font color=#FF9900>APAGAR</font>]]></string>
+    <string name="ln_info_status_negotiations"><![CDATA[<font color=#FF9900>NEGOCIACIÓN</font>]]></string>
+    <string name="ln_info_status_other"><![CDATA[<font color=#777777>%1$s</font>]]></string>
+
+    <string name="ln_chan_close_inflight_details"><![CDATA[&#9888; <font color=#FF9900>Hay pagos pendientes</font> por lo que el cierre cooperativo será pospuesto hasta que estos sean resueltos<br><br>No es recomendado cerrar un canal en este momento y dejar los pagos atascados eventualmente fallen o se completen, ¿Le gustaría continuar?]]></string>
+    <string name="ln_chan_force_offline_details"><![CDATA[&#9888; <font color=#FF9900>El canal está fuera de línea en este momento</font> por lo que al cerrarlo se generará un <a href=http://lightning-wallet.com/using-lightning-wallet#forced-channel-closure>cierre de canal forzado</a>, que requiere tiempo y tarifas adicionales<br><br>Antes de realizar esta operación es recomendado esperar al menos un día para que un par remoto vuelva a estar en línea. ¿Desea continuar?]]></string>
+    <string name="ln_chan_force_details"><![CDATA[&#9888; Tenga en cuenta que el cierre en este momento dará como resultado un <a href=http://lightning-wallet.com/using-lightning-wallet#forced-channel-closure>cierre de canal forzado</a>, que requiere tiempo y tarifas adicionales, ¿Desea continuar?]]></string>
+    <string name="ln_chan_close_confirm_address"><![CDATA[¿Desea cerrar este canal y enviar una transacción de reembolso a la siguiente dirección?<br><br><strong>%1$s</strong><br><br>Por favor, asegúrese de que la dirección sea la correcta ya que esta acción no se puede deshacer]]></string>
+    <string name="ln_chan_close_confirm_local">¿Desea cerrar este canal y enviar una transacción de reembolso a esta billetera?</string>
+    <string name="ln_chan_force">Cierre forzado</string>
+
+    <array name="ln_chan_actions_list">
+        <item>Ver transacción de fondeo</item>
+        <item><![CDATA[Exportar instantánea del canal<br><font color=#999999><small>contiene llaves privadas</small></font>]]></item>
+        <item><![CDATA[Cerrar a dirección especificada<br><font color=#999999><small>copiar una dirección antes de proceder</small></font>]]></item>
+        <item>Cerrar a esta billetera</item>
+    </array>
+
+    <array name="ln_chan_present">
+        <item><![CDATA[No hay canales presentes]]></item>
+        <item><![CDATA[%1$s canal en total]]></item>
+        <item><![CDATA[%1$s canales en total]]></item>
+    </array>
+
+    <array name="ln_status_expiry">
+        <item><![CDATA[expirado, quedó atascado]]></item>
+        <item><![CDATA[expira en %1$s bloque]]></item>
+        <item><![CDATA[expira en %1$s bloques]]></item>
+    </array>
+
+    <!-- opening a new channel -->
+    <array name="ln_ops_start_node_channels">
+        <item><![CDATA[<strong>No hay canales públicos</strong>]]></item>
+        <item><![CDATA[<strong>%1$s</strong> canal público]]></item>
+        <item><![CDATA[<strong>%1$s</strong> canales públicos]]></item>
+        <item><![CDATA[<i>Canales públicos desconocidos</i>]]></item>
+    </array>
+
+    <string name="ln_ops_start_fund_external_title"><![CDATA[<small>¿Tienes preguntas o te sientes perdido?<br><a href=http://lightning-wallet.com/using-lightning-wallet#using-lightning-wallet>Lee sobre Lightning Network</a></small><br><br>fondeo de canal de pago<br><strong>desde fuente externa</strong>]]></string>
+    <string name="ln_ops_start_fund_local_title"><![CDATA[<small>¿Tienes preguntas o te sientes perdido?<br><a href=http://lightning-wallet.com/using-lightning-wallet#using-lightning-wallet>Lee sobre Lightning Network</a></small><br><br>fondeo de canal de pago<br><strong>desde billetera local</strong>]]></string>
+    <string name="ln_ops_start_fund_node_view"><![CDATA[%1$s<br><font color=#999999><i>abriendo un canal</i></font><br><small>%2$s</small><br><br><font color=#999999>ID de nodo par</font><br><small>%3$s</small>]]></string>
+    <string name="ln_ops_start_node_view"><![CDATA[%1$s<br><small>%2$s<br><font color=#999999>%3$s</font></small>]]></string>
+</resources>
